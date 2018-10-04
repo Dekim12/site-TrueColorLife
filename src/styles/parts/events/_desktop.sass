@@ -1,1 +1,60 @@
 .events
+  width: 100%
+  height: 880px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  
+  h2
+    margin-bottom: 28px
+    display: inline-block
+    font-family: PalatinoRegular
+    color: black
+  
+  article
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 30px
+    .mu_event
+      margin: 0 40px
+      padding: 8px 10px
+      width: 310px
+      height: 300px
+      cursor: pointer
+      h3
+        margin: 12px
+        border-bottom: 1px solid white
+        font-family: PalatinoRegular
+        color: white
+      p
+        font-family: PalatinoRegular
+        font-size: 19px
+        line-height: 21px
+        color: #E0E0E0
+        text-align: center
+
+    .mu_event:hover
+      opacity: 0.8
+      h3
+        color: black
+
+    .filter
+      width: 100%
+      height: 100%
+      background: rgba(0, 0, 0, .5)
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    .first
+      background: url("../images/main-content/events.jpg") no-repeat
+      background-size: 100% 100%
+    .second
+      background: url("../images/main-content/events.jpg") no-repeat
+      background-size: 100% 100%
+    .third
+      margin-top: 60px
+      background: url("../images/main-content/events.jpg") no-repeat
+      background-size: 100% 100%
