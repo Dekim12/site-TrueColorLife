@@ -1,0 +1,77 @@
+.header
+  height: 8vh
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.header .true_life
+  width: 300px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.header .true_life a
+  
+  font-family: PalatinoRegular
+  color: black
+  font-size: 20px
+
+.header .social_icon  
+  width: 300px
+  display: flex
+  justify-content: flex-start
+  align-items: center 
+  ul
+    display: flex
+    flex-direction: row
+    a
+      padding: 0 4px
+      font-size: 20px
+      color: #888888
+    a:hover
+      color: black
+
+.header .search
+  padding-right: 2px
+
+.header .search form
+  margin: 0 auto
+  position: relative
+  width: 300px
+  height: 42px
+
+.header .search input
+  height: 42px
+  width: 0
+  padding: 0 42px 0 15px
+  border: none
+  border-bottom: 2px solid transparent
+  outline: none
+  background: transparent
+  transition: .4s cubic-bezier(0, 0.8, 0, 1)
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 2
+  font-size: 18px
+
+.header .search input:focus 
+  width: 300px
+  z-index: 1
+  border: 1px solid #888888
+
+.header .search button 
+  background: #888888
+  border: none
+  height: 42px
+  width: 42px
+  position: absolute
+  top: 0
+  right: 0
+  cursor: pointer
+
+.header .search button:before 
+  content: "\f002"
+  font-family: FontAwesome
+  font-size: 16px
+  color: white  
