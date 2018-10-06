@@ -13,74 +13,108 @@
     border-bottom: 1px solid 	#D3D3D3
     z-index: 50
     .wrapper
+      border: 1px solid red
       height: 8vh
-      display: flex
-      align-items: center
-      justify-content: space-between
+      position: relative
 
 .header .true_life
-  width: 300px
+  width: 100%
+  position: absolute
+  height: 100%
   display: flex
   justify-content: center
   align-items: center
+
+.header 
+  .menu_burger_icon
+    position: absolute
+    right: 10px
+    display: flex
+    align-items: center
+    height: 100%
+    .fa-bars
+      color: grey
+      font-size: 23px
+    .fa-bars:hover
+      color: black
 
 .header .true_life a
   font-family: PalatinoRegular
   color: black
   font-size: 20px
 
-.header .social_icon  
-  width: 300px
-  display: flex
-  justify-content: flex-start
-  align-items: center 
-  ul
+.header 
+  .hamburger_menu
+    height: 100%
     display: flex
-    flex-direction: row
-    a
-      padding: 0 4px
-      font-size: 20px
-    a .fa:hover
-      color: #484848
+    justify-content: space-between
+    align-items: center
+    .social_icon  
+      width: 300px
+      display: flex
+      justify-content: flex-start
+      align-items: center 
+      ul
+        display: flex
+        flex-direction: row
+        a
+          padding: 0 4px
+          font-size: 20px
+        a .fa:hover
+          color: #484848
 
-.header .search
-  padding-right: 2px
+.header 
+  .hamburger_menu
+    .search
+      display: none
+      padding-right: 4px
 
-.header .search form
-  margin: 0 auto
-  position: relative
-  width: 300px
-  height: 42px
+.header 
+  .hamburger_menu
+    .search
+      form
+        margin: 0 auto
+        position: relative
+        width: 300px
+        height: 42px
 
-.header .search input
-  height: 42px
-  width: 0
-  padding: 0 42px 0 15px
-  border: none
-  border-bottom: 2px solid transparent
-  outline: none
-  background: transparent
-  transition: .4s cubic-bezier(0, 0.8, 0, 1)
-  position: absolute
-  top: 0
-  right: 0
-  z-index: 2
-  font-size: 18px
-  cursor: pointer
+.header
+  .hamburger_menu
+    .search 
+      input
+        height: 42px
+        width: 0
+        padding: 0 42px 0 15px
+        border: none
+        border-bottom: 2px solid transparent
+        outline: none
+        background: transparent
+        transition: .4s cubic-bezier(0, 0.8, 0, 1)
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 2
+        font-size: 18px
+        cursor: pointer
 
-.header .search input:focus 
-  width: 300px
-  z-index: 1
-  border: 1px solid #888888
+.header 
+  .hdamburger_menu
+    .search 
+      input:focus 
+        width: 300px
+        z-index: 1
+        border: 1px solid #888888
 
-.header .search button 
-  background: #888888
-  border: none
-  height: 42px
-  width: 42px
-  position: absolute
-  top: 0
-  right: 0
+.header 
+  .hamburger_menu
+    .search button 
+      background: #888888
+      border: none
+      height: 42px
+      width: 42px
+      position: absolute
+      top: 0
+      right: 0
 
 .header .search button:before 
   content: "\f002"
