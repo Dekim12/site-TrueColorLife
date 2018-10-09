@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const HTMLWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 const extractSASS = new ExtractTextPlugin({
-  filename: 'style.css'
+  filename: '2style.css'
 });
 
 const extractHTML = new HTMLWebpackPlugin({
