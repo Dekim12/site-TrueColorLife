@@ -8,6 +8,15 @@ let arrEvents = document.getElementsByClassName('first')[0];
 let modalW = document.getElementsByClassName('modal')[0];
 let headerFixed = document.getElementsByClassName('fixed_block')[0];
 let btnClose = document.getElementsByClassName('btnClose')[0];
+let nav = document.getElementsByClassName('navigation')[0];
+let btnGamb = document.getElementsByClassName('menu_burger_icon')[0];
+
+// console.log(nav.classList.toggle('show'));
+
+btnGamb.addEventListener('click', function() {
+  nav.classList.toggle('show');
+  console.log(nav.classList);
+});
 
 arrEvents.addEventListener('click', function() {
   modalW.style.display = 'block';

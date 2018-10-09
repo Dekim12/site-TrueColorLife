@@ -1,9 +1,75 @@
-@media screen and (max-width: 950px)
-  .header .fixed_block .wrapper
-    justify-content: center
+@media screen and (max-width: 1070px)
+  header 
+    .header_wrapper
+      .menu_burger_icon
+        display: block
 
-  .header .social_icon
-    display: none
-  
-  .header .search
-    display: none
+  header 
+    .header_wrapper
+      nav
+        position: absolute
+        width: 300px
+        height: 330px
+        top: 8vh
+        right: 5px
+        .menu_burger_icon
+          display: block
+
+  header 
+    .header_wrapper
+      .show
+        display: none
+
+  header 
+    .header_wrapper 
+      nav
+        .block_nav
+          width: 100%
+          height: 100%
+          .nav_wrapper
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            padding: 70px 0
+            background-color: rgba(190,190,190, 0.7)
+            border: 1px solid #909090
+            .social_icons
+              width: 100%
+              height: 33px
+              ul
+                width: 100%
+                margin: 0 20px
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                a
+                  padding: 0 
+                  font-size: 28px
+                a .fa:hover
+                  color: white
+            .header_link
+              width: 100%
+              margin: 20px 0
+              flex-direction: column
+              justify-content: center
+              a
+                margin-bottom: 20px
+                width: 100%
+                text-align: center
+                font-size: 25px
+                color: black
+              a + a 
+                margin-bottom: 0
+              a:hover
+                color: white
+            .search
+              width: 100%
+              padding-right: 0
+              form
+                width: 280px
+                height: 42px
+                input:focus 
+                  width: 280px
+                  border: 1px solid black
+                button 
+                  background: black
